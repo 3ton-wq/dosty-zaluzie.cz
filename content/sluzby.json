@@ -1,0 +1,9 @@
+{
+  "polozky": [
+    { "nazev": "Venkovní žaluzie", "ikona": "fa-bars-staggered", "foto": "/images/realizace/20260714_150944.jpg", "stitek": "Populární", "popis": "Dokonalá regulace světla a teploty v interiéru. Snižují náklady na klimatizaci a zajišťují soukromí.", "tlacitko": "Mám zájem", "siroka": false },
+    { "nazev": "Venkovní a interiérové rolety", "ikona": "fa-window-maximize", "foto": "/images/realizace/20260821_105621.jpg", "stitek": "", "popis": "Venkovní bezpečnostní a izolační rolety, nebo stylové interiérové látkové rolety pro každý interiér.", "tlacitko": "Mám zájem", "siroka": false },
+    { "nazev": "Markýzy", "ikona": "fa-umbrella-beach", "foto": "/images/realizace/IMG_20251010_091816.jpg", "stitek": "", "popis": "Příjemný stín pro vaši terasu, balkón či venkovní posezení. Odolné konstrukce a široký výběr látek.", "tlacitko": "Mám zájem", "siroka": false },
+    { "nazev": "Sítě proti hmyzu", "ikona": "fa-bug-slash", "foto": "/images/realizace/IMG_20250917_142945.jpg", "stitek": "", "popis": "Efektivní a nenápadná ochrana oken i dveří proti obtížnému hmyzu. Pevné, rolovací i dveřní sítě.", "tlacitko": "Mám zájem", "siroka": false },
+    { "nazev": "Servis a seřízení", "ikona": "fa-screwdriver-wrench", "foto": "/images/realizace/servis.jpg", "stitek": "Péče o zákazníky", "popis": "Nefungují vám žaluzie tak, jak by měly? Potřebují seřídit, vyměnit motor či popruhy? Poskytuji odborný servis, diagnostiku a seřízení pro dlouhou životnost vaší stínící techniky.", "tlacitko": "Objednat servis", "siroka": true }
+  ]
+}

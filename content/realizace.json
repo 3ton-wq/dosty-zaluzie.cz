@@ -1,0 +1,18 @@
+{
+  "projekty": [
+    { "foto": "/images/realizace/IMG_20250319_112015.jpg", "kategorie": "Rodinný dům", "nazev": "Kompletní stínění novostavby", "popis": "Instalace venkovních žaluzií s elegantním ovládáním.", "popisek_foto": "Moderní rodinný dům – venkovní žaluzie" },
+    { "foto": "/images/realizace/IMG-20251017-WA0006.jpg", "kategorie": "Byt", "nazev": "Interiérové stínění a technika", "popis": "Precizní montáž prvků v interiéru zakázky.", "popisek_foto": "Byt / Interiér – stínění a závěsy" },
+    { "foto": "/images/realizace/20260722_135703.jpg", "kategorie": "Terasa", "nazev": "Stínění venkovního posezení", "popis": "Instalace markýzy pro pohodlný pobyt na terase.", "popisek_foto": "Terasová markýza" }
+  ],
+  "galerie": [
+    { "foto": "/images/realizace/20260410_154310.jpg" },
+    { "foto": "/images/realizace/20260421_144641.jpg" },
+    { "foto": "/images/realizace/IMG_20250917_142824.jpg" },
+    { "foto": "/images/realizace/20260420_104150.jpg" },
+    { "foto": "/images/realizace/20260729_105516.jpg" },
+    { "foto": "/images/realizace/IMG_20250917_142937.jpg" },
+    { "foto": "/images/realizace/20260720_150106.jpg" },
+    { "foto": "/images/realizace/20260814_151813.jpg" },
+    { "foto": "/images/realizace/20260901_121553.jpg" }
+  ]
+}

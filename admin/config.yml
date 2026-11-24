@@ -1,0 +1,117 @@
+# Nastavení administrace (Decap CMS)
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    update: "Úprava: {{slug}}"
+
+locale: cs
+site_url: https://dostyzaluzie.cz
+display_url: https://dostyzaluzie.cz
+logo_url: /images/realizace/blinds.jpg
+
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: web
+    label: Obsah webu
+    editor:
+      preview: false
+    files:
+      - name: cenik
+        label: "💰 Ceník"
+        file: content/cenik.json
+        fields:
+          - { name: zobrazit, label: "Zobrazit ceník na webu", widget: boolean, default: true }
+          - { name: uvod, label: "Text nad ceníkem", widget: text, required: false }
+          - name: polozky
+            label: "Položky ceníku"
+            label_singular: "položku"
+            widget: list
+            summary: "{{fields.nazev}} — {{fields.cena}} {{fields.jednotka}}"
+            fields:
+              - { name: nazev, label: "Název", widget: string }
+              - { name: cena, label: "Cena", widget: string, hint: "Např. „od 4 500 Kč“ nebo „na dotaz“" }
+              - { name: jednotka, label: "Jednotka", widget: string, required: false, hint: "Např. „za m²“, „za kus“ (nepovinné)" }
+              - { name: poznamka, label: "Drobná poznámka pod názvem", widget: string, required: false }
+          - { name: poznamka_dole, label: "Poznámka pod ceníkem", widget: text, required: false }
+
+      - name: sluzby
+        label: "🛠️ Služby"
+        file: content/sluzby.json
+        fields:
+          - name: polozky
+            label: "Služby"
+            label_singular: "službu"
+            widget: list
+            summary: "{{fields.nazev}}"
+            fields:
+              - { name: nazev, label: "Název", widget: string }
+              - { name: popis, label: "Popis", widget: text }
+              - { name: foto, label: "Fotka", widget: image, required: false }
+              - { name: stitek, label: "Štítek v rohu fotky", widget: string, required: false, hint: "Např. „Populární“. Prázdné = bez štítku." }
+              - { name: tlacitko, label: "Text odkazu", widget: string, default: "Mám zájem" }
+              - name: ikona
+                label: "Ikona"
+                widget: select
+                default: fa-circle-check
+                options:
+                  - { label: "Žaluzie (lamely)", value: fa-bars-staggered }
+                  - { label: "Okno", value: fa-window-maximize }
+                  - { label: "Slunečník / markýza", value: fa-umbrella-beach }
+                  - { label: "Hmyz", value: fa-bug-slash }
+                  - { label: "Nářadí / servis", value: fa-screwdriver-wrench }
+                  - { label: "Dům", value: fa-house-chimney }
+                  - { label: "Slunce", value: fa-sun }
+                  - { label: "Štít / bezpečnost", value: fa-shield-halved }
+                  - { label: "Motor / elektřina", value: fa-bolt }
+                  - { label: "Fajfka", value: fa-circle-check }
+              - { name: siroka, label: "Široká karta (přes 2 sloupce)", widget: boolean, default: false }
+
+      - name: realizace
+        label: "📸 Realizace a galerie"
+        file: content/realizace.json
+        fields:
+          - name: projekty
+            label: "Hlavní ukázky (3 karty)"
+            label_singular: "ukázku"
+            widget: list
+            summary: "{{fields.nazev}}"
+            fields:
+              - { name: foto, label: "Fotka", widget: image }
+              - { name: kategorie, label: "Kategorie", widget: string, hint: "Např. „Rodinný dům“" }
+              - { name: nazev, label: "Nadpis", widget: string }
+              - { name: popis, label: "Krátký popis", widget: string }
+              - { name: popisek_foto, label: "Text při najetí myší na fotku", widget: string, required: false }
+          - name: galerie
+            label: "Galerie (tlačítko „více“)"
+            label_singular: "fotku"
+            widget: list
+            summary: "{{fields.foto}}"
+            fields:
+              - { name: foto, label: "Fotka", widget: image }
+
+      - name: recenze
+        label: "⭐ Recenze"
+        file: content/recenze.json
+        fields:
+          - { name: zobrazit, label: "Zobrazit recenze na webu", widget: boolean, default: true }
+          - name: polozky
+            label: "Recenze"
+            label_singular: "recenzi"
+            widget: list
+            summary: "{{fields.jmeno}}"
+            fields:
+              - { name: text, label: "Text recenze", widget: text }
+              - { name: jmeno, label: "Jméno", widget: string, hint: "Např. „Petr K.“" }
+              - { name: misto, label: "Místo", widget: string, required: false }
+              - { name: hvezdy, label: "Počet hvězdiček", widget: number, value_type: int, min: 1, max: 5, default: 5 }
+
+      - name: nastaveni
+        label: "📞 Kontakty a nastavení"
+        file: content/nastaveni.json
+        fields:
+          - { name: telefon, label: "Telefon", widget: string, hint: "Ve tvaru +420 602 123 456" }
+          - { name: email, label: "E-mail", widget: string }
+          - { name: prijima_zakazky, label: "Přijímám zakázky (vypnuto = „Plně obsazeno“)", widget: boolean, default: true }

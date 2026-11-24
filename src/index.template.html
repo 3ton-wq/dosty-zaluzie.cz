@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOSTY STÍNĚNÍ | dostyzaluzie.cz - Precizní montáž stínící techniky</title>
+    <meta name="description" content="Montáž venkovních žaluzií, rolet, markýz a sítí proti hmyzu. Servis a seřízení stínící techniky. Osobní a precizní přístup.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slateDark: '#050b14',
+                        slateCard: '#0b132b',
+                        blueAccent: '#0ea5e9',
+                        blueHover: '#0284c7',
+                        electricBlue: '#0099ff',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050b14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0ea5e9;
+        }
+
+        .blinds-fixed-bg {
+            background-image: url('/images/realizace/blinds.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        @media (hover: none) {
+            .blinds-fixed-bg { background-attachment: scroll; }
+        }
+    </style>
+</head>
+<body class="bg-slateDark text-slate-100 font-sans antialiased selection:bg-blueAccent selection:text-slateDark">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#050b14]/90 backdrop-blur-md border-b border-slate-800/85 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-electricBlue to-cyan-400 flex items-center justify-center text-white font-extrabold text-lg shadow-lg shadow-electricBlue/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-extrabold tracking-tight text-white block leading-tight">DOSTY <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">STÍNĚNÍ</span></span>
+                    <span class="text-[11px] text-slate-400 font-medium tracking-wide">dostyzaluzie.cz</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+{{NAV_DESKTOP}}
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="tel:{{TEL_HREF}}" class="hidden sm:inline-flex items-center gap-2 bg-electricBlue hover:bg-blueHover text-white font-semibold px-3.5 py-2 rounded-xl shadow-md shadow-electricBlue/20 transition-all text-sm transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>Zavolat</span>
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-slateCard text-slate-300 hover:text-white border border-slate-800 focus:outline-none">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slateCard border-b border-slate-800 px-6 py-6 space-y-4">
+            {{NAV_MOBILE}}
+            <div class="pt-2 border-t border-slate-800 flex flex-col gap-3">
+                <a href="tel:{{TEL_HREF}}" class="flex items-center justify-center gap-2 bg-electricBlue text-white font-bold py-3 rounded-xl shadow-lg shadow-electricBlue/30">
+                    <i class="fa-solid fa-phone-volume"></i> Zavolat {{TEL}}
+                </a>
+                <a href="mailto:{{EMAIL}}" class="flex items-center justify-center gap-2 bg-slate-900 text-slate-200 font-semibold py-3 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-envelope"></i> Napsat na mail
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-14 md:pt-28 md:pb-16 overflow-hidden blinds-fixed-bg">
+        <div class="absolute inset-0 bg-[#050b14]/55"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-electricBlue/10 rounded-full blur-[130px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-4 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slateCard/90 border border-slate-700 text-blueAccent text-xs sm:text-sm font-medium shadow-xl">
+                        <i class="fa-solid fa-shield-halved"></i> dostyzaluzie.cz | Profesionální stínění
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight drop-shadow-md">
+                        Precizní montáž stínící techniky <span class="text-transparent bg-clip-text bg-gradient-to-r from-electricBlue via-cyan-400 to-blue-300">pro Váš domov a Vaše soukromí</span>
+                    </h1>
+                    
+                    <div class="space-y-2 text-slate-200 text-sm sm:text-base font-medium max-w-2xl mx-auto lg:mx-0 drop-shadow bg-slateCard/60 p-4 rounded-2xl border border-slate-700/60">
+                        <p>„Dělám to tak, jako bych si stínění montoval doma. Neříkám, že nikdy neudělám chybu – jsem člověk. Za ty roky už jsem jich pár měl. Ale právě zkušenosti mě naučily, že většina problémů má řešení. A když už za svou práci ručím, nechci odejít, dokud nejsem s výsledkem spokojený já i zákazník.“</p>
+                        <p class="text-blue-300 font-semibold">„Práci považuji za hotovou až ve chvíli, kdy se za ní můžu s čistým svědomím podepsat.“</p>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+                        <a href="tel:{{TEL_HREF}}" class="flex items-center gap-2.5 bg-electricBlue hover:bg-blueHover text-white font-bold px-5 py-3 rounded-xl shadow-xl shadow-electricBlue/30 hover:scale-105 transition-all text-sm sm:text-base">
+                            <i class="fa-solid fa-phone text-base"></i>
+                            <span>Zavolat</span>
+                        </a>
+                        <a href="mailto:{{EMAIL}}" class="flex items-center gap-2.5 bg-slateCard/90 hover:bg-slate-900 text-slate-200 border border-slate-700 font-semibold px-5 py-3 rounded-xl transition-all hover:scale-105 text-sm sm:text-base shadow-lg">
+                            <i class="fa-solid fa-envelope text-blueAccent text-base"></i>
+                            <span>Napsat na mail</span>
+                        </a>
+                        <a href="#realizace" class="flex items-center gap-2.5 bg-slateCard/70 hover:bg-slateCard/90 text-slate-200 hover:text-white font-medium px-5 py-3 rounded-xl transition-all border border-slate-700 text-sm sm:text-base shadow-lg">
+                            <i class="fa-solid fa-images text-blue-400 text-base"></i>
+                            <span>Realizace</span>
+                        </a>
+                    </div>
+
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-slate-600/60 mt-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricBlue to-cyan-400">100%</div>
+                            <div class="text-xs text-slate-200 mt-0.5 font-semibold">Preciznost a péče</div>
+                        </div>
+                        <div>
+                            <div class="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricBlue to-cyan-400">Osobní</div>
+                            <div class="text-xs text-slate-200 mt-0.5 font-semibold">Přístup k zákazníkovi</div>
+                        </div>
+                        <div>
+                            <div class="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricBlue to-cyan-400">Top</div>
+                            <div class="text-xs text-slate-200 mt-0.5 font-semibold">Kvalitní materiály</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="relative bg-slateCard/95 border border-slate-700 rounded-3xl p-6 sm:p-7 shadow-2xl space-y-5">
+                            <div class="flex items-center justify-between pb-3.5 border-b border-slate-800">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-11 h-11 rounded-2xl bg-electricBlue/15 text-electricBlue flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-user-gear"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white text-base">Daniel / Dosty</h3>
+                                        <p class="text-xs text-blueAccent font-medium">Specialista na stínění</p>
+                                    </div>
+                                </div>
+                                {{BADGE}}
+                            </div>
+
+                            <blockquote class="text-slate-200 italic text-xs sm:text-sm leading-relaxed bg-[#050b14]/80 p-3.5 rounded-2xl border border-slate-800">
+                                „Jmenuji se Daniel a v oboru montáže stínící techniky se věnuji profesionálně. Nehledám nejrychlejší cestu – hledám správné řešení.“
+                            </blockquote>
+
+                            <div class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                                <div class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-blueAccent"></i>
+                                    <span>Vaše stínění montuji stejně pečlivě, jako bych je montoval sobě.</span>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-blueAccent"></i>
+                                    <span>Práce nikdy nenechávám rozdělané</span>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-blueAccent"></i>
+                                    <span>Vše řeším a domlouvám se zákazníkem</span>
+                                </div>
+                            </div>
+
+                            <div class="pt-1">
+                                <a href="#kontakt" class="w-full block text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold py-2.5 rounded-xl border border-slate-700 transition-colors shadow-md text-sm">
+                                    Nezávazná poptávka
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- O mně -->
+    <section id="o-mne" class="py-24 blinds-fixed-bg border-t border-slate-800/80">
+        <div class="absolute inset-0 bg-[#050b14]/50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-blueAccent">O mně</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white drop-shadow">Kvalita, na kterou se můžete spolehnout</h3>
+                <p class="text-slate-200 font-medium">Můj přístup k práci vychází z poctivého řemesla a osobní zodpovědnosti za každý namontovaný prvek.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slateCard/95 border border-slate-700 p-8 rounded-3xl shadow-xl hover:border-blueAccent/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-electricBlue/15 text-electricBlue flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Profesionální přístup</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Jmenuji se Daniel a montáži stínící techniky se věnuji s plným nasazením a dlouholetými zkušenostmi.
+                    </p>
+                </div>
+
+                <div class="bg-slateCard/95 border border-slate-700 p-8 rounded-3xl shadow-xl hover:border-blueAccent/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-electricBlue/15 text-electricBlue flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Jako u sebe doma</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Každou práci dělám tak, jako bych ji dělal u sebe doma. Nehledám zkratky, ale ideální funkční výsledek.
+                    </p>
+                </div>
+
+                <div class="bg-slateCard/95 border border-slate-700 p-8 rounded-3xl shadow-xl hover:border-blueAccent/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-electricBlue/15 text-electricBlue flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Puntičkářská preciznost</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Nad každou montáží přemýšlím, ladím detaily a záleží mi na tom, aby vše fungovalo absolutně bezchybně.
+                    </p>
+                </div>
+
+                <div class="bg-slateCard/95 border border-slate-700 p-8 rounded-3xl shadow-xl hover:border-blueAccent/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-electricBlue/15 text-electricBlue flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Spolehlivost a komunikace</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Vše domlouvám se zákazníkem předem. Práci nikdy nenechávám rozdělané – dotahuji věci do úspěšného konce.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Služby -->
+    <section id="sluzby" class="py-24 bg-slateDark border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-blueAccent">Služby</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Kompletní stínící technika pro váš domov</h3>
+                <p class="text-slate-300">Nabízím dodávku, montáž, servis i individuální poradenství pro veškerou moderní stínící techniku.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {{SLUZBY}}
+            </div>
+        </div>
+    </section>
+
+{{CENIK}}
+
+    <!-- Realizace -->
+    <section id="realizace" class="py-24 blinds-fixed-bg border-t border-slate-800/80">
+        <div class="absolute inset-0 bg-[#050b14]/50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-blueAccent">Realizace</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white drop-shadow">Ukázky mé práce</h3>
+                <p class="text-slate-200 font-medium">Prohlédněte si vybrané instalace venkovních žaluzií, rolet a markýz u spokojených zákazníků.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {{PROJEKTY}}
+            </div>
+
+            <!-- Tlačítko "více" – otevře galerii -->
+{{GALERIE_BTN}}
+        </div>
+    </section>
+
+    <!-- Galerie (slider) -->
+    <div id="gallery-modal" class="fixed inset-0 z-50 bg-[#050b14]/95 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6">
+        
+        <button id="close-gallery-btn" class="absolute top-6 right-6 z-50 text-slate-400 hover:text-white bg-slateCard/80 hover:bg-slate-800 p-3 rounded-full border border-slate-700 transition-colors">
+            <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+
+        <div class="max-w-5xl w-full h-full max-h-[85vh] flex flex-col items-center justify-center relative">
+            
+            <div class="relative w-full flex-1 flex items-center justify-center overflow-hidden rounded-3xl bg-slateCard/50 border border-slate-800 shadow-2xl p-2">
+                <img id="gallery-img" src="" alt="Realizace" class="max-h-[70vh] max-w-full object-contain rounded-2xl transition-all duration-300">
+                
+                
+                <button id="prev-img-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-slateDark/80 hover:bg-electricBlue text-white p-3 sm:p-4 rounded-full border border-slate-700 shadow-lg transition-all hover:scale-110">
+                    <i class="fa-solid fa-chevron-left text-lg"></i>
+                </button>
+                
+                
+                <button id="next-img-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-slateDark/80 hover:bg-electricBlue text-white p-3 sm:p-4 rounded-full border border-slate-700 shadow-lg transition-all hover:scale-110">
+                    <i class="fa-solid fa-chevron-right text-lg"></i>
+                </button>
+            </div>
+
+            
+            <div class="mt-4 text-slate-400 text-sm font-semibold tracking-wider">
+                <span id="current-index" class="text-blueAccent font-bold">1</span> / <span id="total-images">0</span>
+            </div>
+            
+            
+            <div class="mt-3 flex items-center justify-center gap-2" id="gallery-dots"></div>
+        </div>
+    </div>
+
+{{RECENZE}}
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="py-24 blinds-fixed-bg border-t border-slate-800/80 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[#050b14]/50"></div>
+        <div class="absolute top-1/2 left-0 w-96 h-96 bg-electricBlue/10 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-blueAccent">Kontakt</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white drop-shadow">Pojďme vyřešit vaše stínění</h3>
+                <p class="text-slate-200 font-medium">Zavolejte mi, napište na e-mail nebo vyplňte kontaktní formulář a já se vám ozvu zpět.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-slateCard/95 border border-slate-700 rounded-3xl p-8 shadow-2xl space-y-8">
+                        <div>
+                            <h4 class="text-2xl font-bold text-white mb-2">Rychlý kontakt</h4>
+                            <p class="text-slate-300 text-sm">Jsem vám plně k dispozici pro konzultace a poptávky.</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <a href="tel:{{TEL_HREF}}" class="flex items-start gap-4 group">
+                                <div class="w-12 h-12 rounded-2xl bg-electricBlue/15 text-electricBlue flex items-center justify-center text-xl shrink-0 group-hover:bg-electricBlue group-hover:text-white transition-colors">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block font-medium">Zavolat</span>
+                                    <span class="text-lg font-bold text-white group-hover:text-blueAccent transition-colors">{{TEL}}</span>
+                                </div>
+                            </a>
+
+                            <a href="mailto:{{EMAIL}}" class="flex items-start gap-4 group">
+                                <div class="w-12 h-12 rounded-2xl bg-electricBlue/15 text-electricBlue flex items-center justify-center text-xl shrink-0 group-hover:bg-electricBlue group-hover:text-white transition-colors">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block font-medium">Napsat na mail</span>
+                                    <span class="text-lg font-bold text-white group-hover:text-blueAccent transition-colors">{{EMAIL}}</span>
+                                </div>
+                            </a>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-electricBlue/15 text-electricBlue flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block font-medium">Webová adresa</span>
+                                    <span class="text-lg font-bold text-white">dostyzaluzie.cz</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-slate-800 text-xs text-slate-300 leading-relaxed">
+                            <strong class="text-white block mb-1">DOSTY STÍNĚNÍ</strong> – profesionální montáž stínící techniky s důrazem na preciznost a spokojenost zákazníka.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-slateCard/95 border border-slate-700 rounded-3xl p-8 sm:p-10 shadow-2xl">
+                        <h4 class="text-2xl font-bold text-white mb-2">Nezávazná poptávka / Zpráva</h4>
+                        <p class="text-slate-300 text-sm mb-8">Vyplňte formulář a já se vám ozvu zpět s návrhem řešení.</p>
+
+                        <form name="poptavka" method="POST" action="/dekujeme/" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
+                            <input type="hidden" name="form-name" value="poptavka">
+                            <p class="hidden"><label>Nevyplňujte: <input name="bot-field"></label></p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Vaše jméno</label>
+                                    <input type="text" name="jmeno" required placeholder="Jan Novák" class="w-full bg-[#050b14] border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-blueAccent transition-colors">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Telefonní číslo</label>
+                                    <input type="tel" name="telefon" required placeholder="+420 123 456 789" class="w-full bg-[#050b14] border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-blueAccent transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">E-mailová adresa</label>
+                                <input type="email" name="email" required placeholder="jan.novak@example.cz" class="w-full bg-[#050b14] border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-blueAccent transition-colors">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Vyberte službu / zájem</label>
+                                <select name="sluzba" class="w-full bg-[#050b14] border border-slate-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-blueAccent transition-colors">
+{{FORM_OPTIONS}}
+                                </select>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Vaše zpráva / poznámka</label>
+                                <textarea name="zprava" rows="4" placeholder="Napište mi podrobnosti o vaší poptávce (např. kolik oken, jaký typ stínění...)" class="w-full bg-[#050b14] border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-blueAccent transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-electricBlue hover:bg-blueHover text-white font-bold py-4 rounded-xl shadow-lg shadow-electricBlue/30 transition-all text-base">
+                                Odeslat nezávaznou poptávku
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 pt-8 border-t border-slate-800 text-center text-slate-400 text-sm">
+                <p>&copy; {{ROK}} Daniel Dosty (dostyzaluzie.cz). Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Mobile Menu & Gallery Slider -->
+    <script>
+        // 1. Mobile Menu Logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // 2. Gallery Modal Slider Logic
+        const galleryImages = {{GALERIE_JSON}};
+
+        let currentIndex = 0;
+
+        const openGalleryBtn = document.getElementById('open-gallery-btn');
+        const closeGalleryBtn = document.getElementById('close-gallery-btn');
+        const galleryModal = document.getElementById('gallery-modal');
+        const galleryImg = document.getElementById('gallery-img');
+        const currentIndexSpan = document.getElementById('current-index');
+        const totalImagesSpan = document.getElementById('total-images');
+        const prevImgBtn = document.getElementById('prev-img-btn');
+        const nextImgBtn = document.getElementById('next-img-btn');
+        const galleryDots = document.getElementById('gallery-dots');
+
+        if (totalImagesSpan) {
+            totalImagesSpan.textContent = galleryImages.length;
+        }
+
+        // Generate navigation dots dynamically
+        if (galleryDots) {
+            galleryImages.forEach((_, idx) => {
+                const dot = document.createElement('button');
+                dot.className = "w-2.5 h-2.5 rounded-full bg-slate-700 hover:bg-slate-500 transition-all";
+                dot.addEventListener('click', () => {
+                    currentIndex = idx;
+                    updateGalleryView();
+                });
+                galleryDots.appendChild(dot);
+            });
+        }
+
+        function updateGalleryView() {
+            if (galleryImg) {
+                galleryImg.src = galleryImages[currentIndex];
+            }
+            if (currentIndexSpan) {
+                currentIndexSpan.textContent = currentIndex + 1;
+            }
+
+            if (galleryDots) {
+                const dots = galleryDots.querySelectorAll('button');
+                dots.forEach((dot, idx) => {
+                    if (idx === currentIndex) {
+                        dot.className = "w-6 h-2.5 rounded-full bg-electricBlue transition-all";
+                    } else {
+                        dot.className = "w-2.5 h-2.5 rounded-full bg-slate-700 hover:bg-slate-500 transition-all";
+                    }
+                });
+            }
+        }
+
+        if (openGalleryBtn && galleryModal) {
+            openGalleryBtn.addEventListener('click', () => {
+                currentIndex = 0;
+                updateGalleryView();
+                galleryModal.classList.remove('hidden');
+                galleryModal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        function closeGalleryModal() {
+            if (galleryModal) {
+                galleryModal.classList.add('hidden');
+                galleryModal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        if (closeGalleryBtn) {
+            closeGalleryBtn.addEventListener('click', closeGalleryModal);
+        }
+
+        if (galleryModal) {
+            galleryModal.addEventListener('click', (e) => {
+                if (e.target === galleryModal) {
+                    closeGalleryModal();
+                }
+            });
+        }
+
+        if (prevImgBtn) {
+            prevImgBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+                updateGalleryView();
+            });
+        }
+
+        if (nextImgBtn) {
+            nextImgBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % galleryImages.length;
+                updateGalleryView();
+            });
+        }
+
+        // Keyboard navigation (Arrow keys & Esc)
+        document.addEventListener('keydown', (e) => {
+            if (galleryModal && !galleryModal.classList.contains('hidden')) {
+                if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+                    updateGalleryView();
+                } else if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % galleryImages.length;
+                    updateGalleryView();
+                } else if (e.key === 'Escape') {
+                    closeGalleryModal();
+                }
+            }
+        });
+    </script>
+    <!-- Netlify Identity: potřebné pro přihlášení do administrace (/admin) -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on('init', function (user) {
+                if (!user) {
+                    window.netlifyIdentity.on('login', function () { document.location.href = '/admin/'; });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
