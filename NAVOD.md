@@ -23,6 +23,9 @@ Vlevo uvidíte sekce:
 4. Nahoře klikněte na **Publikovat** (Publish) a potvrďte **Publikovat nyní**
 5. Za cca **1–2 minuty** je změna vidět na webu (obnovte stránku).
 
+> 💡 **Tip:** Každé „Publikovat“ znamená nové zveřejnění webu a tarif jich má za měsíc omezený počet (na bezplatném asi 20).
+> Proto je lepší udělat **všechny úpravy najednou** (třeba všechny ceny) a publikovat **jednou**, ne po každé změně.
+
 ## Jak přidat fotku do galerie
 1. **Realizace a galerie** → dole u „Galerie“ klikněte na tlačítko pro přidání (**Přidat fotku** / Add)
 2. **Vybrat obrázek → Nahrát** (Choose an image → Upload) → vyberte fotku z počítače/telefonu
