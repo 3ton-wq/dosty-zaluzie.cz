@@ -2,12 +2,42 @@
   "zobrazit": true,
   "uvod": "Orientační ceny montáže a stínící techniky. Přesnou cenu vám rád spočítám po zaměření.",
   "polozky": [
-    { "nazev": "Venkovní žaluzie", "cena": "na dotaz", "jednotka": "", "poznamka": "včetně montáže" },
-    { "nazev": "Venkovní rolety", "cena": "na dotaz", "jednotka": "", "poznamka": "" },
-    { "nazev": "Interiérové rolety", "cena": "na dotaz", "jednotka": "", "poznamka": "" },
-    { "nazev": "Markýzy", "cena": "na dotaz", "jednotka": "", "poznamka": "" },
-    { "nazev": "Sítě proti hmyzu", "cena": "na dotaz", "jednotka": "", "poznamka": "pevné, rolovací i dveřní" },
-    { "nazev": "Servis a seřízení", "cena": "na dotaz", "jednotka": "", "poznamka": "" }
+    {
+      "nazev": "Venkovní žaluzie",
+      "cena": "od 4 500 Kč",
+      "jednotka": "",
+      "poznamka": "včetně montáže"
+    },
+    {
+      "nazev": "Venkovní rolety",
+      "cena": "na dotaz",
+      "jednotka": "",
+      "poznamka": ""
+    },
+    {
+      "nazev": "Interiérové rolety",
+      "cena": "na dotaz",
+      "jednotka": "",
+      "poznamka": ""
+    },
+    {
+      "nazev": "Markýzy",
+      "cena": "na dotaz",
+      "jednotka": "",
+      "poznamka": ""
+    },
+    {
+      "nazev": "Sítě proti hmyzu",
+      "cena": "na dotaz",
+      "jednotka": "",
+      "poznamka": "pevné, rolovací i dveřní"
+    },
+    {
+      "nazev": "Servis a seřízení",
+      "cena": "na dotaz",
+      "jednotka": "",
+      "poznamka": ""
+    }
   ],
   "poznamka_dole": "Ceny jsou orientační. Konečná cena závisí na rozměrech, typu výrobku a náročnosti montáže."
 }
